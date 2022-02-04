@@ -25,11 +25,16 @@
 	</style>
 	<div></div>
 <style>
-	h1 {text-align: center;} h1 {letter-spacing: 0px;} h1 {line-height: 0.1;}
-	h1 {position: absolute; left: 620px; top: 40px;}   
+	.h1 {text-align: center;} h1 {letter-spacing: 0px;} h1 {line-height: 0.1;}
+	.h1 {position: absolute; left: 590px; top: 30px;}
+	@media only screen and (max-width: 1000px) {
+	  [class*="h1"] {
+    width: 10%;
+  }
+	}
 </style>
-	<font face="hello" size="6px" color="#2F2F2F">
-		<h1>Hello there!</h1>
+	<font face="roboto" size="6px" color="#2F2F2F">
+		<h1 class="h1">Hello there!</h1>
 		</font>
 <style>
 	img{
@@ -115,6 +120,8 @@ position: absolute; left: 800px; top: 650px;
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="button"] {
+    width: 100%;
+  [class*="image"] {
     width: 100%;
   }
 }
